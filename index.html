@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Snake game</title>
+    <style>
+        canvas {
+            background: black
+        }
+    </style>
+
+    <script src="snake.js"></script>
+</head>
+
+<body onload="init();">
+    <div id="parentDiv">
+        <!-- <canvas id="myCanvas" width="450" height="450">
+        </canvas> -->
+        <div>
+            <div>
+                <canvas id="myCanvas" width="450" height="450"
+                    style="position: absolute; top:20; left:20px; border:3px solid black;"></canvas>
+                <div id="dataDisplay" style="position: absolute; top:30px; left:30px;">
+                    <button>
+                        <span>
+                            <label>Enter your name</label>
+                            <input id="playerName" type="text">
+                            <p><strong>Highest Scores</strong></p>
+                            <p id="showData" style="margin-left: 40px;"></p>
+                        </span>
+                    </button>
+                </div>
+                <div id="superControls" style="position: absolute; top:430px; left:370px;visibility: visible;">
+                    <button id="quitGame" onclick="quitGame()">Quit</button>
+                    <button id="playGameAgain" onclick="playGameAgain()">Play</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+
+</html>
